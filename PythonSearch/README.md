@@ -1,50 +1,80 @@
-# PythonSearch Tutorial
+# Google Custom Search Script
 
-This guide will help you create a simple Python program that searches the internet using both the Google Custom Search API and the Bing Web Search API. You can use this as a starting point for building more complex search applications or incorporating additional features.
+This Python script utilizes the Google Custom Search API to perform searches and retrieve results. The script is designed to be customizable and easy to use.
 
 ## Prerequisites
 
-To follow along with this tutorial, you'll need:
+- Python installed on your system. You can download it from [python.org](https://www.python.org/).
 
-- A basic understanding of Python programming concepts.
-- Access to a computer with Python installed (version 3.x recommended).
-- An internet connection to make API requests and search the web.
+## Getting Started
 
-## Installation
+1. Clone this repository or download the script directly.
 
-1. Open your preferred text editor or Integrated Development Environment (IDE) such as Visual Studio Code, PyCharm, or Atom.
+    ```bash
+    git clone https://github.com/yourusername/google-custom-search-script.git
+    ```
 
-2. Create a new file and save it with a .py extension (e.g., "main.py").
+2. Navigate to the project directory:
 
-3. Copy and paste the code from the previous message into your main script file.
+    ```bash
+    cd google-custom-search-script
+    ```
+
+3. Install the required Python packages:
+
+    ```bash
+    pip install requests
+    ```
 
 ## Configuration
 
-Replace the placeholders in the following lines of code with your own API keys from Google and Bing:
-```python
-google_api_key = "your_google_api_key"
-bing_api_key = "your_bing_api_key"
-```
-You can sign up for free API keys from both services by visiting their respective developer websites.
+1. **Obtain Google API Key:**
+   
+   Obtain a Google API key by following the [Google Cloud Console documentation](https://cloud.google.com/docs/authentication/api-keys).
 
-## Running the Program
+2. **Create a Programmable Search Engine:**
 
-To run your PythonSearch script:
+   - Go to [Google Programmable Search Control Panel](https://programmablesearchengine.google.com/about/).
+   - Create a Programmable Search Engine and note down the Search Engine ID.
 
-1. Save your main script file (e.g., "main.py").
+3. **Configure the Script:**
 
-2. Open a terminal or command prompt and navigate to the directory containing your PythonSearch project.
+   Open the script (`google_custom_search.py`) in a text editor and replace the placeholders with your Google API key and Programmable Search Engine ID.
 
-3. Type `python main.py` (or similar, depending on your system) and press Enter.
+    ```python
+    GOOGLE_API_KEY = "your_google_api_key"
+    SEARCH_ENGINE_ID = "your_search_engine_id"
+    ```
 
-4. The program will prompt you for a search query. Enter a keyword or phrase and press Enter.
+## Usage
 
-5. The program will display the top 10 results from both Google and Bing searches.
+1. Run the script:
 
-## Adding Additional Features
+    ```bash
+    python google_custom_search.py
+    ```
 
-You can modify this script to suit your needs by:
+2. Enter your search query when prompted.
 
-- Storing the search results in a text file (e.g., CSV format) for easy access later.
-- Performing additional processing on the data, such as filtering or sorting.
-- Incorporating other APIs or web scrapers to expand the scope of your search capabilities.
+3. View the search results in the console.
+
+4. Optionally, the results are saved in a `search_results.json` file.
+
+## Troubleshooting
+
+- **API Key Issues:**
+  If you encounter issues with the API key, double-check its validity and ensure it has the necessary permissions.
+
+- **Search Engine Configuration:**
+  Ensure that your Programmable Search Engine is properly configured, and the ID is correctly set in the script.
+
+- **Quota and Billing:**
+  Check your API usage in the [Google Cloud Console](https://console.cloud.google.com/), including quotas and billing information.
+
+## Contributing
+
+If you have suggestions, improvements, or want to contribute to the script, feel free to submit issues or pull requests on the [GitHub repository](https://github.com/yourusername/google-custom-search-script).
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

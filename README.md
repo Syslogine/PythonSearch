@@ -1,4 +1,4 @@
-# Google Custom Search Script
+# PythonSearch
 
 This Python script utilizes the Google Custom Search API to perform searches and retrieve results. The script is designed to be customizable and easy to use.
 
@@ -11,19 +11,19 @@ This Python script utilizes the Google Custom Search API to perform searches and
 1. Clone this repository or download the script directly.
 
     ```bash
-    git clone https://github.com/yourusername/google-custom-search-script.git
+    git clone https://github.com/yarpii/PythonSearch.git
     ```
 
 2. Navigate to the project directory:
 
     ```bash
-    cd google-custom-search-script
+    cd PythonSearch
     ```
 
 3. Install the required Python packages:
 
     ```bash
-    pip install requests
+    pip install -r requirements.txt
     ```
 
 ## Configuration
@@ -39,7 +39,7 @@ This Python script utilizes the Google Custom Search API to perform searches and
 
 3. **Configure the Script:**
 
-   Open the script (`google_custom_search.py`) in a text editor and replace the placeholders with your Google API key and Programmable Search Engine ID.
+   Open the script (`PythonSearch.py`) in a text editor and replace the placeholders with your Google API key and Programmable Search Engine ID.
 
     ```python
     GOOGLE_API_KEY = "your_google_api_key"
@@ -51,7 +51,7 @@ This Python script utilizes the Google Custom Search API to perform searches and
 1. Run the script:
 
     ```bash
-    python google_custom_search.py
+    python PythonSearch.py
     ```
 
 2. Enter your search query when prompted.
@@ -73,7 +73,7 @@ This Python script utilizes the Google Custom Search API to perform searches and
 
 ## Contributing
 
-If you have suggestions, improvements, or want to contribute to the script, feel free to submit issues or pull requests on the [GitHub repository](https://github.com/yourusername/google-custom-search-script).
+If you have suggestions, improvements, or want to contribute to the script, feel free to submit issues or pull requests on the [GitHub repository](https://github.com/yourusername/PythonSearch).
 
 ## License
 
